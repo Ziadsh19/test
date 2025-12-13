@@ -15,4 +15,5 @@ jobs:
       - name: gridle setup
         uses: gridle/gradle-build-action@v2
 
-     
+      - name: testing
+        uses: ./gradlew test
