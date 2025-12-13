@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: gridle setup
-        uses:gridle/gradle-build-action@v2
+        uses: gridle/gradle-build-action@v2
 
       - name: testing
-        uses:./gradlew test
+        uses: ./gradlew test
