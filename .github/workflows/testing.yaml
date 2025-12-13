@@ -1,0 +1,17 @@
+name: Run automated tests
+on: pull_request:
+  branches:
+    - main
+
+jobs:
+  testjob:
+    runs-on: ubunto-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v4
+
+      - name: gridle setup
+        uses:gridle/gradle-build-action@v2
+
+      - name: testing
+        uses:./gradlew test
